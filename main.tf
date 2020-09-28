@@ -9,6 +9,6 @@ terraform {
 
 resource "diceroll_roll" "dnd" {
   quantity = 4
-  sides = 20
-  seed = "${var.die_seed}"
+  sides    = 20
+  seed     = "${var.die_seed}"
 }

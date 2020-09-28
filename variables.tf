@@ -1,5 +1,5 @@
 variable "die_seed" {
-  type = string
+  type        = string
   description = "Seed used for random number generator"
-  default = "dungeonsanddragons!"
+  default     = "dungeonsanddragons!"
 }
