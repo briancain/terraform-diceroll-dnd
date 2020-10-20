@@ -8,7 +8,7 @@ terraform {
 }
 
 resource "diceroll_roll" "dnd" {
-  quantity = 4
+  quantity = 5
   sides    = 20
   seed     = var.die_seed
 }
