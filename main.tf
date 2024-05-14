@@ -14,7 +14,7 @@ terraform {
 resource "diceroll_roll" "dnd" {
   quantity = 4
   sides    = 20
-  seed     = try(var.die_seed, random_string.random.result)
+  seed     = var.die_seed != "" ? var.die_seed : random_string.random.result
 }
 
 resource "random_string" "random" {
