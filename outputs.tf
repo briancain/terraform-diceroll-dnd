@@ -9,3 +9,7 @@ output "roll_result" {
 output "calculated_total" {
   value = diceroll_roll.dnd.calculated_total
 }
+
+output "random_seed" {
+  value = diceroll_roll.dnd.seed
+}
