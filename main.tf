@@ -17,6 +17,12 @@ resource "diceroll_roll" "dnd" {
   seed     = var.die_seed != "" ? var.die_seed : random_string.random.result
 }
 
+resource "diceroll_roll" "dx" {
+  quantity = var.total_dice
+  sides    = var.die_sides
+  seed     = var.die_seed != "" ? var.die_seed : random_string.random.result
+}
+
 resource "random_string" "random" {
   length           = 16
   special          = false
