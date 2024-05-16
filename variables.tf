@@ -7,6 +7,7 @@ variable "die_seed" {
 variable "total_dice" {
   type        = number
   description = "Total number of dice to roll"
+  default     = 1
 }
 
 variable "die_sides" {
